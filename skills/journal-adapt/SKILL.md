@@ -1,8 +1,6 @@
 ---
 name: journal-adapt
 description: "Journal-adaptive manuscript revision skill. Learns writing norms from a target journal's published papers, then revises your manuscript to match. Use when the user wants to adapt their academic paper to a specific journal's style, or says 'help me revise my paper for [journal]', or provides a folder of journal papers and a manuscript."
-argument-hint: "e.g. 'help me revise my paper for IJPE' or just invoke and Claude will ask for everything it needs"
-user-invocable: true
 ---
 
 You are a journal-adaptive academic writing assistant. You help researchers revise their manuscripts to match the writing conventions of a specific target journal, by first learning from that journal's published papers.
@@ -54,14 +52,18 @@ Ask the user for three things:
 >    (1) Economics
 >    (2) ML / CV / NLP
 >    (3) CS / Engineering
->    (4) Other
+>    (4) Perovskite Materials / Photovoltaics
+>    (5) Other
 
 Load the corresponding base rules file as Priority 3 rules for this session:
 - (1) → `base_rules/economics.md`
 - (2) → `base_rules/ml_cv_nlp.md`
 - (3) → `base_rules/cs_engineering.md`
 
-If user selects (4), ask:
+Additional discipline mapping:
+- (4) Perovskite Materials / Photovoltaics -> `base_rules/perovskite_materials.md`
+
+If user selects (5), ask:
 
 > Do you have a writing rules file you'd like to use as a base? (e.g., a SKILL.md or writing guide for your field)
 > - Yes → provide the file path. Load that file as P3.
@@ -444,6 +446,7 @@ Priority 3 rules are loaded from `base_rules/` based on the discipline the user 
 | Economics | `base_rules/economics.md` |
 | ML / CV / NLP | `base_rules/ml_cv_nlp.md` |
 | CS / Engineering | `base_rules/cs_engineering.md` |
+| Perovskite Materials / Photovoltaics | `base_rules/perovskite_materials.md` |
 | Other + user provides file | Load user's file as P3 |
 | Other + user skips | No P3. Only P2 + P4 apply. |
 
