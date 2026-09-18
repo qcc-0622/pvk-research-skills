@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Install Codex skills into ~/.codex/skills/
+# Install Codex skills into ~/.agents/skills/
 # Usage: bash codex/install-skills.sh from the repository root.
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 src="$(cd "$script_dir/../skills" && pwd)"
-dst="${CODEX_HOME:-$HOME/.codex}/skills"
+dst="$HOME/.agents/skills"
 
 mkdir -p "$dst"
 

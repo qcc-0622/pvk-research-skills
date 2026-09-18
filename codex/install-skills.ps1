@@ -1,9 +1,9 @@
-# Install Codex skills into ~/.codex/skills/
+# Install Codex skills into ~/.agents/skills/
 # Usage: run .\codex\install-skills.ps1 from the repository root.
 $ErrorActionPreference = "Stop"
 
 $src = Join-Path $PSScriptRoot "..\skills"
-$dst = Join-Path $env:USERPROFILE ".codex\skills"
+$dst = Join-Path $env:USERPROFILE ".agents\skills"
 
 if (-not (Test-Path -LiteralPath $src)) {
   throw "Skills directory not found: $src"

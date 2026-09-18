@@ -5,7 +5,7 @@ description: 钙钛矿太阳能电池论文写作助手，针对 Wiley AM/AFM/AE
 
 # PVK Writing — 钙钛矿论文写作
 
-> 先读 `context.md` 获取领域背景，再读 `journal_writing_rules.md` 获取期刊精确规范（基于10篇真实论文提取）。写作时 Priority 2 规则优先于本文件的默认设置。
+> 先读同目录的 `context.md` 获取领域背景，再读 `journal_writing_rules.md` 获取期刊精确规范（基于10篇真实论文提取）。写作时 Priority 2 规则优先于本文件的默认设置。
 
 ## 核心原则
 

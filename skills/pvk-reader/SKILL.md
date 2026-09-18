@@ -5,7 +5,7 @@ description: 钙钛矿太阳能电池文献精读助手。当用户分享一篇�
 
 # PVK Reader — 文献精读
 
-> 先读 `context.md` 了解钙钛矿领域背景。
+> 先读同目录的 `context.md` 了解钙钛矿领域背景。
 
 ## 精读框架
 

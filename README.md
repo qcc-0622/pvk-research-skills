@@ -44,7 +44,7 @@ pvk-research-skills/
     ├── prompts/             # Codex 用：每个技能压平成单文件，可作斜杠命令
     │   ├── pvk-writing.md  …  /pvk-writing
     │   └── …
-    ├── install.ps1          # Windows 一键安装到 ~/.codex/prompts/
+    ├── install.ps1          # Windows 一键安装到 ~/.agents/skills/
     └── install.sh           # macOS / Linux 一键安装
 ```
 
@@ -52,8 +52,8 @@ pvk-research-skills/
 
 ## 装到 Codex CLI
 
-Codex 没有 Claude Code 那种"按描述自动触发"的机制，而是用 `~/.codex/prompts/` 里的
-markdown 当**斜杠命令**。本仓库已把每个技能压平成一个自包含的 prompt 文件。
+新版 Codex 支持从 `~/.agents/skills/` 自动发现标准 Skill。本仓库的
+`skills/` 目录是推荐安装入口；`codex/prompts/` 仍保留给旧版斜杠命令流程。
 
 ### 方式 A：一键脚本（推荐）
 
@@ -67,11 +67,11 @@ markdown 当**斜杠命令**。本仓库已把每个技能压平成一个自包�
 bash codex/install.sh
 ```
 
-脚本会把 `codex/prompts/*.md` 复制到 `~/.codex/prompts/`。
+脚本会把 `skills/*` 复制到 `~/.agents/skills/`。
 
 ### 方式 B：手动复制
 
-把 `codex/prompts/` 里的 `.md` 文件复制到你的 `~/.codex/prompts/` 目录即可。
+旧版 Codex 可把 `codex/prompts/` 里的 `.md` 文件复制到你的 `~/.codex/prompts/` 目录。
 
 ### 用法
 

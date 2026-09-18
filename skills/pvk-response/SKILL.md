@@ -5,7 +5,7 @@ description: 钙钛矿太阳能电池论文审稿回复助手，针对 Wiley AM/
 
 # PVK Response — 审稿回复
 
-> 先读 `context.md` 获取领域背景知识。
+> 先读同目录的 `context.md` 获取领域背景知识。
 
 ## Wiley 回复格式
 

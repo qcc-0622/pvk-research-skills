@@ -5,7 +5,7 @@ description: 钙钛矿太阳能电池论文润色助手，针对 Wiley AM/AFM/AE
 
 # PVK Polishing — 钙钛矿论文润色
 
-> 先读 `context.md` 获取领域背景，再读 `journal_writing_rules.md` 获取期刊精确规范（基于10篇真实论文提取）。润色时 Priority 4（必删列表）和 Priority 2 规则优先。
+> 先读同目录的 `context.md` 获取领域背景，再读 `journal_writing_rules.md` 获取期刊精确规范（基于10篇真实论文提取）。润色时 Priority 4（必删列表）和 Priority 2 规则优先。
 
 ## 润色原则
 

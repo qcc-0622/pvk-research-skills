@@ -5,7 +5,7 @@ description: 钙钛矿太阳能电池论文引用管理助手，针对 Wiley AM/
 
 # PVK Citation — 引用管理
 
-> 先读 `journal_writing_rules.md` 了解 Wiley 引用格式规范。
+> 先读同目录的 `journal_writing_rules.md` 了解 Wiley 引用格式规范。
 
 ## Wiley 引用格式
 
